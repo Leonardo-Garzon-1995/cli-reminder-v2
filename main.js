@@ -1,8 +1,16 @@
 import {program} from "commander";
+import * as func from "./lib/commands.js";
 
 program
     .name("cli-reminder-v2")
     .version("1.0.0")
     .description("CLI Reminder")
 
-program.command()
+program.command("setTimer")
+    .description("Set a timer")
+    .action(func.setTimer)
+program.command("current")
+    .description("Get the current time")
+    .action(func.displayCurrentTime)
+    
+program.parse()
