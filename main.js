@@ -12,5 +12,8 @@ program.command("setTimer")
 program.command("current")
     .description("Get the current time")
     .action(func.displayCurrentTime)
+program.command("stopwatch")
+    .description("Start a stopwatch")
+    .action(func.startTimer)
     
 program.parse()
