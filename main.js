@@ -15,5 +15,8 @@ program.command("time")
 program.command("stopwatch")
     .description("Start a stopwatch")
     .action(func.startTimer)
+program.command("pomodoro")
+    .description("Start a pomodoro timer")
+    .action(func.setPomodoro)
     
 program.parse()
