@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {program} from "commander";
 import * as func from "./lib/commands.js";
 

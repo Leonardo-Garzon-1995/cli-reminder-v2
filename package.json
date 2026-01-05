@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "type": "module",
+  "bin": {
+    "timer": "./main.js"
+  },
   "directories": {
     "lib": "lib"
   },
